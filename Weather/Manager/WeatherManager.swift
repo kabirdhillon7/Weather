@@ -7,11 +7,16 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
+
+enum API: String {
+    case key = "" /// Replace with your API key from openweathermap.org
+}
 
 class WeatherManager {
     
     func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> ResponseBody {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\("abcd")&units=imperial") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(API.key.rawValue)&units=imperial") else {
             fatalError("Missing Url")
         }
         
@@ -28,7 +33,7 @@ class WeatherManager {
     }
 }
 
-// Model of the response body we get from calling the OpenWeather API
+/// Model of the response body we get from calling the OpenWeather API
 struct ResponseBody: Decodable {
     var coord: CoordinatesResponse
     var weather: [WeatherResponse]

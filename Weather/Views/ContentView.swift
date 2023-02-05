@@ -12,13 +12,17 @@ struct ContentView: View {
     @StateObject var locationManger = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
+
     
     var body: some View {
         VStack {
+            
             if let location = locationManger.location {
+                
                 if let weather = weather {
                     WeatherView(weather: weather)
                 } else {
+                    
                     LoadingView()
                         .task {
                             do {

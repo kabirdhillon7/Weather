@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+let WeatherConditionToSymbol = [
+    "Clear" : "sun.max",
+    "Thunderstorm" : "cloud.bolt",
+    "Drizzle" : "cloud.drizzle",
+    "Rain" : "cloud.rain",
+    "Snow" : "cloud.snow",
+    "Atmosphere" : "",
+    "Clouds" : "cloud",
+    
+    "Smoke" : "smoke",
+    "Haze" : "sun.haze",
+    "Dust" : "sun.dust",
+    "Fog" : "cloud.fog",
+    "Tornado" : "tornado",
+    "loading" : "goforward"
+]
+
 struct WeatherView: View {
     var weather: ResponseBody
     
@@ -25,7 +42,9 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: "sun.max")
+                            var weatherType = weather.weather[0].main
+                            
+                            Image(systemName: WeatherConditionToSymbol[weatherType ?? "loading"] ?? "goforward")
                                 .font(.system(size: 40))
                             Text(weather.weather[0].main)
                         }
@@ -41,7 +60,7 @@ struct WeatherView: View {
                     
                     Spacer()
                         .frame(height:  80)
-                        
+                    
                     AsyncImage(url: URL(string: "https://cdn.pixabay.com/photo/2020/01/24/21/33/city-4791269_960_720.png")) { image in
                         image
                             .resizable()
@@ -62,7 +81,7 @@ struct WeatherView: View {
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("Weather now")
+                    Text("Weather Now")
                         .bold().padding(.bottom)
                     
                     HStack {
