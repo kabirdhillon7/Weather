@@ -18,6 +18,10 @@
 		48FB9A94298E476500A07362 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A93298E476500A07362 /* WelcomeView.swift */; };
 		48FB9A96298E4AD900A07362 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A95298E4AD900A07362 /* LoadingView.swift */; };
 		48FB9A98298E4C5500A07362 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A97298E4C5500A07362 /* WeatherManager.swift */; };
+		48FB9A9A298F170D00A07362 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A99298F170D00A07362 /* WeatherView.swift */; };
+		48FB9A9C298F175E00A07362 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A9B298F175E00A07362 /* ModelData.swift */; };
+		48FB9A9E298F178700A07362 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 48FB9A9D298F178700A07362 /* weatherData.json */; };
+		48FB9AA0298F183700A07362 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FB9A9F298F183700A07362 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		48FB9A93298E476500A07362 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		48FB9A95298E4AD900A07362 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		48FB9A97298E4C5500A07362 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		48FB9A99298F170D00A07362 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		48FB9A9B298F175E00A07362 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		48FB9A9D298F178700A07362 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		48FB9A9F298F183700A07362 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 				48FB9A65298E426400A07362 /* WeatherApp.swift */,
 				48FB9A69298E426500A07362 /* Assets.xcassets */,
 				48FB9A6B298E426500A07362 /* Preview Content */,
+				48FB9A9F298F183700A07362 /* Extension.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				48FB9A6C298E426500A07362 /* Preview Assets.xcassets */,
+				48FB9A9B298F175E00A07362 /* ModelData.swift */,
+				48FB9A9D298F178700A07362 /* weatherData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 				48FB9A67298E426400A07362 /* ContentView.swift */,
 				48FB9A93298E476500A07362 /* WelcomeView.swift */,
 				48FB9A95298E4AD900A07362 /* LoadingView.swift */,
+				48FB9A99298F170D00A07362 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FB9A6D298E426500A07362 /* Preview Assets.xcassets in Resources */,
+				48FB9A9E298F178700A07362 /* weatherData.json in Resources */,
 				48FB9A6A298E426500A07362 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,11 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FB9AA0298F183700A07362 /* Extension.swift in Sources */,
 				48FB9A98298E4C5500A07362 /* WeatherManager.swift in Sources */,
 				48FB9A68298E426400A07362 /* ContentView.swift in Sources */,
 				48FB9A66298E426400A07362 /* WeatherApp.swift in Sources */,
 				48FB9A91298E434100A07362 /* LocationManager.swift in Sources */,
 				48FB9A96298E4AD900A07362 /* LoadingView.swift in Sources */,
+				48FB9A9C298F175E00A07362 /* ModelData.swift in Sources */,
+				48FB9A9A298F170D00A07362 /* WeatherView.swift in Sources */,
 				48FB9A94298E476500A07362 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
