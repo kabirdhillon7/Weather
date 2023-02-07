@@ -20,7 +20,7 @@ Some of the main features include:
 ## Requirements
 
 - iOS 16.0 or later
-- iPhone 8 or newer
+- iPhone 8, iPhone SE (2nd Generation), or newer
 
 ## Demo
 <img width="229" alt="Weather Screenshot" src="https://user-images.githubusercontent.com/74223402/216849884-bccc8f25-acd9-4ca9-8b3c-87399ee01dea.png">
