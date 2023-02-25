@@ -14,8 +14,9 @@ Weather is an iOS app using SwiftUI that allows a user to view the Weather using
 
 Some of the main features include:
 
-- [X] Users are able to view the weather in Fahernheit
-- [X] Users can view the minimum temperature, maximumn temperature, wind speed, and humidity
+- Users can share their current location using a prompted button
+- Users are able to view the weather in Fahernheit
+- Users can view the minimum temperature, maximumn temperature, wind speed, and humidity
 
 ## Requirements
 
